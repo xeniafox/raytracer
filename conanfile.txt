@@ -1,0 +1,6 @@
+[requires]
+libbacktrace/cci.20210118
+
+[generators]
+PkgConfigDeps
+MesonToolchain
