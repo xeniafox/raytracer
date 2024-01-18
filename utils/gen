@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+export CC=g
+export CXX=g++
+export CC_LD=gold
+export CXX_LD=gold
+
+conan install . --output-folder=build --build=missing && meson setup --native-file build/conan_meson_native.ini build/raytracer && ninja -C build/raytracer -t compdb -x c_COMPILER cpp_COMPILER > compile_commands.json
