@@ -5,6 +5,9 @@ A CPU-based raytracer made from scratch for learning
 ## Requirements
 
 - A compiler compatible with C++20.
+- Conan Package Manager.
+- Meson.
+- Ninja Build System.
 
 ## Building
 
